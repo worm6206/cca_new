@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js test</title>
+	<script type="text/javascript">
+		var allText; 
+		var CsvUrl = "https://docs.google.com/spreadsheets/d/10_oN4FdGWNmBSU6_XjVPWW9S-9OPqw41jgXdZL1auM0/pub?output=csv"
+		function readTextFile(file){
+            var rawFile = new XMLHttpRequest();
+            rawFile.open("GET", file, false);
+            rawFile.onreadystatechange = function ()
+            {
+                if(rawFile.readyState === 4)
+                {
+                    if(rawFile.status === 200 || rawFile.status == 0)
+                    {
+                        allText = rawFile.responseText;
+                        // alert(allText);
+                    }
+                }
+            }
+            // rawFile.send(null);
+        }
+        function removeComment(string)
+        {
+            if(string[i]=='%')
+            {
+                while(string[++i]!='\n');
+                i++;
+                removeComment(string);
+            }
+        }
+        function splitString(string, sep)
+        {
+            arrayofStrings = string.split(sep);
+        }
+        //store text file into allText
+        readTextFile(CsvUrl);
+        //remove lines start with '%'
+        removeComment(allText);
+        allText = allText.substring(i,allText.length);
+        //replace \n with space, then use space to split string into array.
+        allText = allText.replace(/\n/g," ");
+        splitString(allText,' ');
+
+	</script>
+</head>
+<body>
+
+
+<div class="output"></div>
+
+</body>
+</html>

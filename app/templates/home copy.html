@@ -1,0 +1,61 @@
+
+
+<div class="row">
+	<div class="col-md-8">
+		<div class="owl-carousel" data-toggle="tooltip" data-placement="left" title="投影片被暫停了 Carousel Paused">
+			<div class="item" data-hash="/?one">
+				<div class="well well-sm" style="text-align: center">
+				<h5>CCA 2016猴年慶祝活動 Celebration for The Year of Monkey<a type="button" class="btn btn-success btn-sm" style="margin-left:20px">活動連結 Facebook Link</a><h5>
+				</div>
+				<img src="/images/2016newyearAD.jpg" alt="2016 New Year Celebration">
+			</div>
+			<div class="item" data-hash="/?two">
+				<div class="well well-sm" style="text-align: center">
+				<h5>二月行事曆 Calendar of February<h5>
+				</div>
+				<img src="/images/newyearcalendar.jpg" alt="2016 New Year Celebration">
+			</div>
+			<div class="item" data-hash="/?three">
+				<div class="well well-sm" style="text-align: center">
+				<h5>學校GIFT CARD「Double禮金」Sponser CCA!<h5>
+				</div>
+				<img src="/images/giftcard1.jpg" alt="2016 New Year Celebration">
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+			<h4><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 學校地點 Location</h4>
+			<p>
+				Daniel Wright Elementary School
+				<br>2335 W Case Rd Columbus, OH 43235
+				<br><a href="https://goo.gl/maps/8amEZutepYr" target="_top">Google maps</a>
+			</p>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3053.19423936588!2d-83.0800903!3d40.0710792!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88389282b69146f9%3A0x7be66429f0bf0e37!2s2335+W+Case+Rd%2C+Columbus%2C+OH+43235!5e0!3m2!1sen!2sus!4v1416793110861" frameborder="0" style="border:0"></iframe>
+			<h4><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 聯絡我們 Contact Us</h4>
+			<p><a href="mailto:principal@cmhcca.org" target="_top">principal@cmhcca.org</a></p>
+	</div>
+</div>
+<script type="text/javascript">
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    loop:true,
+    margin:10,
+    items:1,
+    dots:false,
+    autoplay: true,
+    URLhashListener:true,
+    autoplayHoverPause:true
+})
+// owl.on('translated.owl.carousel', function(event) {
+//     console.log(event.page.index);
+// })
+$(function () {
+  $('.owl-carousel').tooltip()
+})
+</script>
+
+<style type="text/css">
+.owl-carousel .item img{
+	width: 100%;
+}
+</style>

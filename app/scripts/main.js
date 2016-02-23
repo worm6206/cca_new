@@ -48,6 +48,16 @@ angular
 				url: '/calendar',
 				templateUrl: 'templates/courses/calendar.html',
 			})
+// ******************************* GALLERY *************************** //
+			.state('gallery',{
+				url: '/gallery',
+				templateUrl: 'templates/gallery/2016newyear.html',
+			})
+// ******************************* ACTIVITIES *************************** //
+			.state('summercamp2016',{
+				url: '/summercamp2016',
+				templateUrl: 'templates/activity/summercamp2016.html',
+			})
 // ******************************* REGISTRATION *************************** //
 			.state('chinese_reg',{
 				url: '/chinese_reg',

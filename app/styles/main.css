@@ -1,3 +1,7 @@
+body{
+  font-family: "微軟正黑體", "Microsoft JhengHei",  Tahoma , Verdana , Arial , sans-serif;
+}
+
 .navbar {
   min-height: 100px;
 }
@@ -10,6 +14,22 @@
 .navbar-nav {
   height: 30px;
   margin-top: 10px;
+}
+
+.navbar-collapse.collapse {
+display: block!important;
+}
+
+.navbar-nav>li, .navbar-nav {
+float: left !important;
+}
+
+.navbar-nav.navbar-right:last-child {
+margin-right: -15px !important;
+}
+
+.navbar-right {
+float: right!important;
 }
 
 @media (max-width: 1200px) {
@@ -64,11 +84,11 @@ body {
   background-color: #424242;
   color: #d4d4d4;
   position: absolute;
-  bottom: 0;
+  bottom: -70;
   width: 100%;
   border-top: 1px solid #424242;
   /* Set the fixed height of the footer here */
-  height: 70px;
+  height: 140px;
 }
 
 .btn-group-vertical .btn{
@@ -160,3 +180,53 @@ body {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
+.box {
+/*  width: 200px; height: 300px;
+  position: relative;
+  border: 1px solid #BBB;
+  background: #EEE;*/
+}
+
+.ribbon {
+  position: absolute;
+  left: 10px; top: -5px;
+  z-index: 1;
+  overflow: hidden;
+  width: 75px; height: 75px;
+  text-align: right;
+}
+.ribbon span {
+  font-size: 15px;
+  /*font-weight: bold;*/
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  width: 100px;
+  display: block;
+  background: #79A70A;
+  background: #bb0000;
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 19px; left: -21px;
+}
+.ribbon span::before {
+  content: "";
+  position: absolute; left: 0px; top: 100%;
+  z-index: -1;
+  border-left: 3px solid #8F0808;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #8F0808;
+}
+.ribbon span::after {
+  content: "";
+  position: absolute; right: 0px; top: 100%;
+  z-index: -1;
+  border-left: 3px solid transparent;
+  border-right: 3px solid #8F0808;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #8F0808;
+}

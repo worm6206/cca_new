@@ -58,6 +58,10 @@ angular
 				url: '/summercamp2016',
 				templateUrl: 'templates/activity/summercamp2016.html',
 			})
+			.state('FASCA',{
+				url: '/FASCA',
+				templateUrl: 'templates/activity/FASCA.html',
+			})
 // ******************************* REGISTRATION *************************** //
 			.state('chinese_reg',{
 				url: '/chinese_reg',

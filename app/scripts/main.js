@@ -27,6 +27,10 @@ angular
 				url: '/rules',
 				templateUrl: 'templates/about/rules.html',
 			})
+			.state('archives',{
+				url: '/archives',
+				templateUrl: 'templates/about/archives.html',
+			})
 // ******************************* COURSES *************************** //
 			.state('chinese',{
 				url: '/chinese',

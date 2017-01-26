@@ -67,6 +67,10 @@ angular
 				templateUrl: 'templates/activity/FASCA.html',
 			})
 // ******************************* REGISTRATION *************************** //
+			.state('reg',{
+				url: '/reg',
+				templateUrl: 'templates/registration/reg.html',
+			})
 			.state('chinese_reg',{
 				url: '/chinese_reg',
 				templateUrl: 'templates/registration/chinese_reg.html',

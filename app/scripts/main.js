@@ -52,6 +52,10 @@ angular
 				url: '/calendar',
 				templateUrl: 'templates/courses/calendar.html',
 			})
+			.state('accomplishments',{
+				url: '/accomplishments',
+				templateUrl: 'templates/activity/accomplishments.html',
+			})
 // ******************************* GALLERY *************************** //
 			.state('gallery',{
 				url: '/gallery',

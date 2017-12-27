@@ -56,6 +56,10 @@ angular
 				url: '/accomplishments',
 				templateUrl: 'templates/activity/accomplishments.html',
 			})
+			.state('chinesenewyear2018',{
+				url: '/chinesenewyear2018',
+				templateUrl: 'templates/activity/chinesenewyear2018.html',
+			})
 // ******************************* GALLERY *************************** //
 			.state('gallery',{
 				url: '/gallery',

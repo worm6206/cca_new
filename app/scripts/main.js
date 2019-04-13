@@ -78,6 +78,10 @@ angular
 				url: '/summercamp2018',
 				templateUrl: 'templates/activity/summercamp2018.html',
 			})
+			.state('summercamp2019',{
+				url: '/summercamp2019',
+				templateUrl: 'templates/activity/summercamp2019.html',
+			})
 			.state('FASCA',{
 				url: '/FASCA',
 				templateUrl: 'templates/activity/FASCA.html',

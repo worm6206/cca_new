@@ -99,6 +99,11 @@ angular
 				url: '/extra_reg',
 				templateUrl: 'templates/registration/extra_reg.html',
 			})
+// ******************************* TCML REGISTRATION *************************** //
+			.state('tcml_reg',{
+				url: '/tcml_reg',
+				templateUrl: 'templates/registration/tcml_reg.html',
+			})
 	}])
 	.run(['$rootScope', '$location', '$window', function($rootScope, $location, $window){
 	     $rootScope
